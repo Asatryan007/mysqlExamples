@@ -15,6 +15,7 @@ Create table students(
                          grade int not null
 );
 
+
 -- Create table courses
 Create table courses(
                         id int primary key auto_increment,
@@ -32,6 +33,9 @@ create table teachers(
 
 -- Create table enrollments
 create table enrollments(
+
                             student_id int not null,
                             course_id int not null
-)
+);
+
+insert into students (name, birthdate, gender, grade)
