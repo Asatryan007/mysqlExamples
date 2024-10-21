@@ -15,6 +15,12 @@ Create table students(
                          grade int not null
 );
 
+-- Create table teachers
+create table teachers(
+                         id int primary key auto_increment,
+                         name varchar(40) not null,
+                         department varchar(80) not null
+);
 
 -- Create table courses
 Create table courses(
@@ -26,12 +32,6 @@ Create table courses(
                         REFERENCES teachers(id)
 );
 
--- Create table teachers
-create table teachers(
-                         id int primary key auto_increment,
-                         name varchar(40) not null,
-                         department varchar(80) not null
-);
 
 -- Create table enrollments
 create table enrollments(
