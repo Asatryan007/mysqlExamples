@@ -4,11 +4,16 @@ SELECT students.id,students.name, students.birthdate, students.gender,students.g
 FROM students,courses,enrollments
 WHERE   students.id = enrollments.student_id and courses.id = enrollments.course_id and courses.course_name = 'Physics'
 
--- List all courses taught by teachers from the "Maths" department
+-- List all courses taught by teachers from the "Mathematics" department
 
-SELECT  courses.id, courses.course_name, courses.course_code, teachers.name, teachers.department
-FROM courses,teachers
-WHERE courses.teacher_id = teachers.id and teachers.department = 'Mathematics'
+SELECT  courses.id, courses.course_name, courses.course_code,teacher_department.name as teacher_name
+FROM courses,
+     (SELECT teachers.id as teacher_id, teachers.name, school_managment.departments.department_name from teachers
+                                                                                                             inner join departments
+                                                                                                                        on teachers.department_id = departments.id) as teacher_department
+
+where courses.teacher_id = teacher_department.teacher_id and teacher_department.department_name = 'Mathematics'
+
 
 -- Count students are enrolled in each course
 

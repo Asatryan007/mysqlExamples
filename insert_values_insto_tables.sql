@@ -5,12 +5,7 @@ VALUES ('Alex', '2007-11-08', 'male', 80),
        ('Mary', '2007-10-22', 'female', 95),
        ('Jane', '2007-03-12', 'female', 100);
 
--- insert into table teachers
-insert into teachers(name, department)
-VALUES ('Ann', 'Physics'),
-       ('Bob', 'Mathematics'),
-       ('Arnold', 'Geography'),
-       ('Lisa', 'History');
+
 
 -- insert into table courses
 insert into courses( course_name, course_code, teacher_id)
@@ -36,3 +31,19 @@ values (1,1),
        (4,2),
        (4,3),
        (4,4);
+
+-- insert into table departments
+
+INSERT INTO departments(department_name)
+VALUES ('Physics'),
+       ('Mathematics'),
+       ('Biology'),
+       ('History');
+
+-- insert into table teachers
+insert into teachers(name, department_id)
+VALUES ('Ann', 1),
+       ('Bob', 2),
+       ('Arnold',3),
+       ('Lisa', 4);
+

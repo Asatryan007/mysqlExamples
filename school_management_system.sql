@@ -14,12 +14,17 @@ Create table students(
                          gender ENUM('male', 'female', 'other'),
                          grade int not null
 );
+-- Create table departments
 
+CREATE TABLE departments(
+                            id int PRIMARY KEY auto_increment,
+                            depratmant_name varchar(50) not null
+);
 -- Create table teachers
 create table teachers(
                          id int primary key auto_increment,
                          name varchar(40) not null,
-                         department varchar(80) not null
+                         department_id int not null
 );
 
 -- Create table courses
