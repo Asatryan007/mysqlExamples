@@ -11,7 +11,7 @@ VALUES ('Alex', '2007-11-08', 'male', 80),
 insert into courses( course_name, course_code, teacher_id)
 values ('Physics', 'A01', 1),
        ('Maths', 'A02', 2),
-       ('Geography', 'A03', 3),
+       ('Biology', 'A03', 3),
        ('History', 'A04', 4),
         ('Algebra','AL01', 6);
 
