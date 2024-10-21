@@ -12,7 +12,26 @@ insert into courses( course_name, course_code, teacher_id)
 values ('Physics', 'A01', 1),
        ('Maths', 'A02', 2),
        ('Geography', 'A03', 3),
-       ('History', 'A04', 4);
+       ('History', 'A04', 4),
+        ('Algebra','AL01', 6);
+
+
+-- insert into table departments
+
+INSERT INTO departments(department_name)
+VALUES ('Physics'),
+       ('Mathematics'),
+       ('Biology'),
+       ('History');
+
+-- insert into table teachers
+insert into teachers(name, department_id)
+VALUES ('Ann', 1),
+       ('Bob', 2),
+       ('Arnold',3),
+       ('Lisa', 4),
+       ('Alice Johnson', 2);
+
 
 -- insert into table enrollments
 insert into enrollments (student_id, course_id)
@@ -30,20 +49,9 @@ values (1,1),
        (4,1),
        (4,2),
        (4,3),
-       (4,4);
+       (4,4),
+       (1,5),
+       (2,5),
+       (3,5)
 
--- insert into table departments
-
-INSERT INTO departments(department_name)
-VALUES ('Physics'),
-       ('Mathematics'),
-       ('Biology'),
-       ('History');
-
--- insert into table teachers
-insert into teachers(name, department_id)
-VALUES ('Ann', 1),
-       ('Bob', 2),
-       ('Arnold',3),
-       ('Lisa', 4);
 
