@@ -2,6 +2,6 @@
 
 SELECT  teachers.name, courses.course_name
 FROM teachers
-         left join  courses
-                    ON teachers.id = courses.teacher_id
+left join  courses
+ON teachers.id = courses.teacher_id
 
