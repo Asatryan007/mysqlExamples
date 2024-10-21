@@ -24,7 +24,9 @@ CREATE TABLE departments(
 create table teachers(
                          id int primary key auto_increment,
                          name varchar(40) not null,
-                         department_id int not null
+                         department_id int not null,
+                        FOREIGN KEY (department_id)
+                        REFERENCES departments(id)
 );
 
 -- Create table courses
