@@ -8,7 +8,7 @@ VALUES ('Alex', '2007-11-08', 'male', 80),
 -- insert into table teachers
 insert into teachers(name, department)
 VALUES ('Ann', 'Physics'),
-       ('Bob', 'Maths'),
+       ('Bob', 'Mathematics'),
        ('Arnold', 'Geography'),
        ('Lisa', 'History');
 
