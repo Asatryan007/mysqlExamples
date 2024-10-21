@@ -5,17 +5,6 @@ VALUES ('Alex', '2007-11-08', 'male', 80),
        ('Mary', '2007-10-22', 'female', 95),
        ('Jane', '2007-03-12', 'female', 100);
 
-
-
--- insert into table courses
-insert into courses( course_name, course_code, teacher_id)
-values ('Physics', 'A01', 1),
-       ('Maths', 'A02', 2),
-       ('Biology', 'A03', 3),
-       ('History', 'A04', 4),
-        ('Algebra','AL01', 6);
-
-
 -- insert into table departments
 
 INSERT INTO departments(department_name)
@@ -31,6 +20,18 @@ VALUES ('Ann', 1),
        ('Arnold',3),
        ('Lisa', 4),
        ('Alice Johnson', 2);
+
+
+-- insert into table courses
+insert into courses( course_name, course_code, teacher_id)
+values ('Physics', 'A01', 1),
+       ('Maths', 'A02', 2),
+       ('Biology', 'A03', 3),
+       ('History', 'A04', 4),
+        ('Algebra','AL01', 6);
+
+
+
 
 
 -- insert into table enrollments

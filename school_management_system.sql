@@ -18,7 +18,7 @@ Create table students(
 
 CREATE TABLE departments(
                             id int PRIMARY KEY auto_increment,
-                            depratmant_name varchar(50) not null
+                            department_name varchar(50) not null
 );
 -- Create table teachers
 create table teachers(
